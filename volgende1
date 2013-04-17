@@ -20,7 +20,7 @@
 	<body>
 		<div id="main-container">
 			<h1>woordapp</h1>
-			<a href="volgende.html" data-transition="flow">start</a> 
+			<a href="volgende.html" data-transition="flow">start</a>
 		</div>
 	</body>
 </html>

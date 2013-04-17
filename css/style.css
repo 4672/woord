@@ -1,7 +1,7 @@
 body {
 	font-family: 'Helvetica Neue';
-	background: #25BA9F;
-	color: #ffffff;
+	background: #DAA520;
+	color: #2f4f4f;
 	font-size: 18px;
 }
 
@@ -15,7 +15,7 @@ body {
 a:link, a:visited {
 	font-weight: normal;
 	text-transform: uppercase;
-	color: #136B5B;
+	color: #191970;
 	text-decoration: none;
 }
 
