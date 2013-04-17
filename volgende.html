@@ -18,11 +18,24 @@
 	</head>
 
 	<body>
+	<SCRIPT TYPE="text/JavaScript">
+    function validateAnswer(inputField) {
+        var isValid = /^kam$/.test(inputField.value);
+
+        if (isValid) {
+		  alert("Dat heb je goed gespeld!");
+		  window.location = 'volgende7.html';
+        } else {
+            alert("Helaas. Probeer het opnieuw.");
+        }
+	}
+</SCRIPT>
 		<div id="main-container">
-		<img src="ajax-loader.gif" alt="ajax-loader">
+		<img src="kam.jpg" alt="kam">
 			<h1>typ het woord</h1>
 			<form method="post" action="">
-			<textarea name="invul" cols="20" rows"5" onFocus="this.value=''"> vul hier je woord in </textarea>
+			<input type="text" value="Typ hier je antwoord..." 
+			onFocus="this.value=''" style="font-size:15pt;text-align:center" onblur="validateAnswer(this);" />
 			</form>
 			<a href="volgende1.html" data-transition="flow">volgende</a></br>
 			<a href="index.html" data-transition="flow">startpagina</a>
