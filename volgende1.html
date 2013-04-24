@@ -20,8 +20,7 @@
 	<body>
 	<SCRIPT TYPE="text/JavaScript">
    function validateAnswer() {
-        var waardeIngevuld = $('#antwoord').val();
-		waardeIngevuld.toLowerCase();
+        var waardeIngevuld = $('#antwoord').val().toLowerCase();
 		console.log(waardeIngevuld);
         if (waardeIngevuld == "boot") {
 			console.log('Goed');
