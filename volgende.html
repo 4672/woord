@@ -18,7 +18,7 @@
 	</head>
 
 	<body>
-	<SCRIPT TYPE="text/JavaScript">
+	<script>
     function validateAnswer(inputField) {
         var waardeIngevuld = inputField.value;
 
@@ -29,13 +29,13 @@
             alert("Helaas. Probeer het opnieuw.");
         }
 	}
-</SCRIPT>
+	</script>
 		<div id="main-container">
 		<img src="kam.jpg" alt="kam">
 			<h1>typ het woord</h1>
 			<form method="post" action="">
 			<input type="text" value="Typ hier je antwoord..." 
-			onFocus="this.value=''" style="font-size:15pt;text-align:center" onblur="validateAnswer(this);" />
+			onFocus="this.value=''" style="font-size:15pt;text-align:center" onblur="validateAnswer(this)" />
 			</form>
 			<a href="volgende1.html" data-transition="flow">volgende</a></br>
 			<a href="index.html" data-transition="flow">startpagina</a>
