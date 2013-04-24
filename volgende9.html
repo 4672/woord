@@ -19,25 +19,28 @@
 
 	<body>
 	<SCRIPT TYPE="text/JavaScript">
-    function validateAnswer(inputField) {
-        var isValid = /^cadeau$/.test(inputField.value);
-
-        if (isValid) {
-		  alert("Dat heb je goed gespeld!");
-		  window.location = 'volgende7.html';
+  function validateAnswer() {
+        var waardeIngevuld = $('#antwoord').val();
+		waardeIngevuld.toLowerCase();
+		console.log(waardeIngevuld);
+        if (waardeIngevuld == "cadeau") {
+			console.log('Goed');
+		  alert("Goed zo! Je hebt het spel uitgespeeld, speel het gerust opnieuw.");
+		  window.location = 'index.html';
         } else {
+			console.log('Fout');
             alert("Helaas. Probeer het opnieuw.");
         }
-    }
+	}
 	</SCRIPT>
 		<div id="main-container">
 		<img src="cadeau.gif" alt="cadeau">
 			<h1>typ het woord</h1>
 		<form method="post" action="">
-			<input type="text" value="Typ hier je antwoord..." 
-			onFocus="this.value=''" style="font-size:15pt;text-align:center" onblur="validateAnswer(this);" />
+			<input id="antwoord" type="text" value="Typ hier je antwoord..." 
+			onFocus="this.value=''" style="font-size:15pt;text-align:center" />
 			</form>
-			<a href="index.html" data-transition="flow">volgende</a></br>
+			<a href="#" onclick="validateAnswer()" data-transition="flow">volgende</a></br>
 			<a href="index.html" data-transition="flow">startpagina</a>
 		</div>
 	</body>
