@@ -25,3 +25,8 @@ a:hover, a:active {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+#main-container input {
+	background: #fff;
+	color: #000;
+}
