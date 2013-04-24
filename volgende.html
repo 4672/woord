@@ -20,9 +20,9 @@
 	<body>
 	<SCRIPT TYPE="text/JavaScript">
     function validateAnswer(inputField) {
-        var isValid = /^kam$/.test(inputField.value);
+        var waardeIngevuld = inputField.value;
 
-        if (isValid) {
+        if (waardeIngevuld == "kam") {
 		  alert("Dat heb je goed gespeld!");
 		  window.location = 'volgende7.html';
         } else {
