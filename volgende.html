@@ -21,6 +21,7 @@
 	<script>
     function validateAnswer() {
         var waardeIngevuld = $('#antwoord').val();
+		waardeIngevuld.toLowerCase();
 		console.log(waardeIngevuld);
         if (waardeIngevuld == "kam") {
 			console.log('Goed');
